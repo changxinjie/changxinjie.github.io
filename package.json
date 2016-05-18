@@ -1,0 +1,23 @@
+{
+  "name": "changxinjie.github.io",
+  "version": "1.0.0",
+  "description": "personal website, it mainly shows infomation for HR.",
+  "main": "index.js",
+  "dependencies": {
+    "angular-bootstrap": "^0.12.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changxinjie/changxinjie.github.io.git"
+  },
+  "author": "常新杰",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/changxinjie/changxinjie.github.io/issues"
+  },
+  "homepage": "https://github.com/changxinjie/changxinjie.github.io#readme"
+}

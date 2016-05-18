@@ -1,5 +1,8 @@
-* {
-  box-sizing: border-box; }
+/**
+ *  This is why we need to remove empty href attributes from directive templates and as a result styling is not applied correctly. The remedy is simple, just add the following styling to your application:
+ */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+* {box-sizing: border-box; }
 
 body {
   padding: 0;
