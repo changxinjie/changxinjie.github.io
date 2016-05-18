@@ -1,4 +1,4 @@
-var app = angular.module('chang', ['ngAnimate','ngCookies','ngMessages','ui.bootstrap']);
+var app = angular.module('chang', ['ngAnimate','ngCookies','ui.bootstrap']);
 app.controller("headerCtrl",['$scope',function($scope){
 	$scope.tips = tips;
 }]);
