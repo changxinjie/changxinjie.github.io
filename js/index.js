@@ -9,7 +9,7 @@ app.controller("footCtrl",['$scope',function($scope){
 app.controller("NavCtrl",["$scope",function($scope){
 	$scope.menu = menu;
 	$scope.click = function(method){
-		let deal= angular.bind(this,method);
+		var deal= angular.bind(this,method);
 		deal();
 	}
 }]);
