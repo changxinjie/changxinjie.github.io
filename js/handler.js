@@ -1,8 +1,5 @@
 var handler = {
-	showIntroduce:function(){
-		alert("alerts");	
-	},
-	showCV:function(){
-		alert("ssss");
+	openLink:function(link,Coms){
+		Coms.sendSignal('openLink',link);
 	}
 }

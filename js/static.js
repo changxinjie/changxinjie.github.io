@@ -1,11 +1,13 @@
 var menu = {
 	"introduce": {
 		"name": "简介",
-		"click": handler.showIntroduce
+		"click": handler.openLink,
+		"url":"html/introduce.html"
 	},
 	"cv": {
 		"name": "查看简历",
-		"click": handler.showCV
+		"click": handler.openLink,
+		"url":"html/table1.html"
 	},
 	"investment": {
 		"name": "入股投资",
