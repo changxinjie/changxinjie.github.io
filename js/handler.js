@@ -2,7 +2,7 @@ var handler = {
 	showIntroduce:function(){
 		alert("alerts");	
 	},
-	showCV:()=>{
+	showCV:function(){
 		alert("ssss");
 	}
 }
