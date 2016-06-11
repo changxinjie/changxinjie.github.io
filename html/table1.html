@@ -1,5 +1,5 @@
+<h3>基本信息</h3>
 <table>
-	<caption style="text-align: center;">个人简历</caption>
 	<tr>
 		<td>姓名</td>
 		<td>常新杰</td>
@@ -9,7 +9,7 @@
 	</tr>
 	<tr>
 		<td>年龄</td>
-		<td></td>
+		<td>26</td>
 		<td>籍贯</td>
 		<td>河南-郑州-巩义</td>
 	</tr>
@@ -21,7 +21,7 @@
 	</tr>
 	<tr>
 		<td>联系方式</td>
-		<td>15003874562<br>17737155458</td>
+		<td><a href="tel:15003874562">15003874562</a><br><a href="tel:17737155458">17737155458</a></td>
 		<td>邮箱</td>
 		<td><a href="mailto:xinjie.chang@foxmail.com">xinjie.chang@foxmail.com</a></td>
 	</tr>
@@ -31,4 +31,26 @@
 		<td>学历</td>
 		<td>大专</td>
 	</tr>
+	<tr>
+		<td>专业</td>
+		<td>计算机应用</td>
+		<td>期望待遇</td>
+		<td>12K+ </td>
+	</tr>
 </table>
+<h3>掌握技能</h3>
+<div ng-controller="endpointCtrl">
+	<uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating>
+	<span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+	<pre style="margin:15px 0;">Rate: <b>{{rate}}</b> - Readonly is: <i>{{isReadonly}}</i> - Hovering over: <b>{{overStar || "none"}}</b></pre>
+	<button type="button" class="btn btn-sm btn-danger" ng-click="rate = 0" ng-disabled="isReadonly">Clear</button>
+	<button type="button" class="btn btn-sm btn-default" ng-click="isReadonly = ! isReadonly">Toggle Readonly</button>
+</div>
+<hr />
+<h3>自我评价</h3>
+<div class="label">
+	1. 拥有较好的英文文档阅读和书写能力, 有利于较快的找到问题解决方案.<br />
+	2. 自学能力较好, 知识面丰富. <br />
+	3. 能承受较强的工作压力.
+</div>
+<h3>工作阅历</h3>
