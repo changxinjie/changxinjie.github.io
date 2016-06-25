@@ -21,13 +21,39 @@ app.controller("MainCtrl", ["$scope", "Coms", function($scope, Coms) {
 	}, $scope);
 }]);
 app.controller("endpointCtrl", ["$scope", function($scope) {
-	$scope.rate = 7;
-	$scope.max = 10;
-	$scope.isReadonly = false;
-
+	$scope.rate = 3;
+	$scope.max = 5;
+	$scope.showDetail = "熟悉常用功能";
+	$scope.info = true;
+	$scope.warning = $scope.success = false;
 	$scope.hoveringOver = function(value) {
-		$scope.overStar = value;
-		$scope.percent = 100 * (value / $scope.max);
+		switch (value) {
+			case 1:
+				$scope.showDetail = "了解基本内容";
+				$scope.warning = true;
+				$scope.info = $scope.success = false;
+				break;
+			case 2:
+				$scope.showDetail = "简单使用";
+				$scope.info = true;
+				$scope.warning = $scope.success = false;
+				break;
+			case 3:
+				$scope.showDetail = "熟悉常用功能";
+				$scope.info = true;
+				$scope.warning = $scope.success = false;
+				break;
+			case 4:
+				$scope.showDetail = "熟练使用大部分功能";
+				$scope.success = true;
+				$scope.info = $scope.warning = false;
+				break;
+			case 5:
+				$scope.showDetail = "精通";
+				$scope.success = true;
+				$scope.info = $scope.warning = false;
+				break;
+		}
 	};
 
 	$scope.ratingStates = [{
@@ -44,4 +70,7 @@ app.controller("endpointCtrl", ["$scope", function($scope) {
 	}, {
 		stateOff: 'glyphicon-off'
 	}];
-}])
+}]);
+app.controller("workHistoryCtrl",['$scope',function($scope){
+	
+}]);

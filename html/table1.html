@@ -40,15 +40,18 @@
 </table>
 <h3>掌握技能</h3>
 <div ng-controller="endpointCtrl">
-	<uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></uib-rating>
-	<span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+	<uib-rating ng-model="rate" max="max" on-hover="hoveringOver(value)" aria-labelledby="default-rating"></uib-rating>
+	<span class="label" ng-class="{'label-warning': warning, 'label-info':info, 'label-success': success}">{{showDetail}}</span>
 	<pre style="margin:15px 0;">鼠标悬浮于星标上,可显示等级说明</pre>
 </div>
 <hr />
 <h3>自我评价</h3>
-<div class="label">
-	1. 拥有较好的英文文档阅读和书写能力, 有利于较快的找到问题解决方案.<br />
-	2. 自学能力较好, 知识面丰富. <br />
-	3. 能承受较强的工作压力.
-</div>
+<pre class="">
+1. 拥有较好的英文文档阅读和书写能力, 有利于较快的找到问题解决方案.<br />
+2. 自学能力较好, 知识面丰富. <br />
+3. 能承受较强的工作压力.
+</pre>
 <h3>工作阅历</h3>
+<div ng-controller="workHistoryCtrl">
+	<div ng-include="'html/time-line.html'"></div>
+</div>
