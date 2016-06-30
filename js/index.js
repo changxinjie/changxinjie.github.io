@@ -82,6 +82,7 @@ app.controller("investCtrl",['$scope',function($scope){
 	$scope.investement = investement;
 }]);
 app.controller("avCtrl",['$scope',function($scope){
+	$scope.avItems = avItems;
 }]);
 app.controller("browserCtrl",['$scope',function($scope){
 	var canvas = document.getElementById("canvas");

@@ -1,6 +1,8 @@
 <div ng-controller="investCtrl">
 	<div ng-repeat="invest in investement">
 		<h3 ng-bind="invest.name"></h3>
-		<p ng-bind="invest.content"></p>
+		<ol>
+			<li ng-repeat="txt in invest.content">{{txt}}</li>
+		</ol>
 	</div>
 </div>
