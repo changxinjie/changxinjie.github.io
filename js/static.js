@@ -1,6 +1,6 @@
 var menu = {
 	"introduce": {
-		"name": "简介",
+		"name": "首页简介",
 		"click": handler.openLink,
 		"url": "html/introduce.html"
 	},
@@ -14,8 +14,13 @@ var menu = {
 		"click": handler.openLink,
 		"url": "html/investment.html"
 	},
+	"mime": {
+		"name": "创业项目",
+		"click": handler.openLink,
+		"url": "html/mime.html"
+	},
 	"test": {
-		"name": "浏览设备检测",
+		"name": "设备检测",
 		"click": handler.openLink,
 		"url": "html/browser.html"
 	},
@@ -38,7 +43,7 @@ var menu = {
 		}
 	},
 	"group2": {
-		"name": "合伙吧",
+		"name": "承接项目",
 		"btn1": {
 			"name": "大中型企业网站",
 			"click": handler.openLink,
