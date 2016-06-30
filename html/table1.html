@@ -39,18 +39,26 @@
 	</tr>
 </table>
 <h3>掌握技能</h3>
-<div ng-controller="endpointCtrl">
+<div ng-controller="skillCtrl">
 	<uib-rating ng-model="rate" max="max" on-hover="hoveringOver(value)" aria-labelledby="default-rating"></uib-rating>
 	<span class="label" ng-class="{'label-warning': warning, 'label-info':info, 'label-success': success}">{{showDetail}}</span>
 	<pre style="margin:15px 0;">鼠标悬浮于星标上,可显示等级说明</pre>
+	<div class="pad">
+		<div ng-repeat="skill in skills">
+			<label ng-bind="skill.type"></label>
+			<ol>
+				<li ng-repeat="txt in skill.content">{{txt}}</li>
+			</ol>
+		</div>
+	</div>
 </div>
 <hr />
 <h3>自我评价</h3>
-<pre class="">
-1. 拥有较好的英文文档阅读和书写能力, 有利于较快的找到问题解决方案.<br />
-2. 自学能力较好, 知识面丰富. <br />
-3. 能承受较强的工作压力.
-</pre>
+<div class="pad" ng-controller="selfCtrl">
+	<ol>
+		<li ng-repeat="txt in self">{{txt}}</li>
+	</ol>
+</div>
 <h3>工作阅历</h3>
 <div ng-controller="workHistoryCtrl">
 	<div ng-include="'html/time-line.html'"></div>

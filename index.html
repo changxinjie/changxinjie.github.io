@@ -24,7 +24,7 @@
 	<body>
 		<section id="header" class="page-header" ng-controller="headerCtrl">
 			<h1 class="project-name"><span ng-bind="tips.top.topic"></span></h1>
-			<h2 class="project-tagline"><span ng-bind="tips.top.topic2"></h2>
+			<h2 class="project-tagline"><span ng-bind="tips.top.topic2"></span></h2>
 		</section>
 		<section class="main-content container ">
 			<nav ng-controller="NavCtrl">
@@ -35,11 +35,11 @@
 	         <span class="caret"></span>
 	     			</button>
 					<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group.btn1.name"></span></a></li>
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group.btn2.name"></a></li>
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group.btn3.name"></a></li>
+						<li role="menuitem" ng-click="click(menu.group.btn1.click,menu.group.btn1.url)"><a href="#"><span ng-bind="menu.group.btn1.name"></span></a></li>
+						<li role="menuitem" ng-click="click(menu.group.btn2.click,menu.group.btn2.url)"><a href="#"><span ng-bind="menu.group.btn2.name"></span></a></li>
+						<li role="menuitem" ng-click="click(menu.group.btn3.click,menu.group.btn3.url)"><a href="#"><span ng-bind="menu.group.btn3.name"></span></a></li>
 						<li class="divider"></li>
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group.btn4.name"></a></li>
+						<li role="menuitem"><a href="#"><span ng-bind="menu.group.btn4.name"></span></a></li>
 					</ul>
 				</div>
 				<div class="btn-group" uib-dropdown is-open="status2.isopen">
@@ -48,14 +48,14 @@
 	     			</button>
 					<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
 						<li role="menuitem"><a href="#"><span ng-bind="menu.group2.btn1.name"></span></a></li>
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group2.btn2.name"></a></li>
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group2.btn3.name"></a></li>
+						<li role="menuitem"><a href="#"><span ng-bind="menu.group2.btn2.name"></span></a></li>
+						<li role="menuitem"><a href="#"><span ng-bind="menu.group2.btn3.name"></span></a></li>
 						<li class="divider"></li>
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group2.btn4.name"></a></li>
+						<li role="menuitem"><a href="#"><span ng-bind="menu.group2.btn4.name"></span></a></li>
 					</ul>
 				</div>
-				<button type="button" class="btn btn-primary" ng-click="click(menu.investment.click)"><span ng-bind="menu.investment.name"></span></button>
-				<button type="button" class="btn btn-primary" ng-click="click(menu.test.click)"><span ng-bind="menu.test.name"></span></button>
+				<button type="button" class="btn btn-primary" ng-click="click(menu.investment.click,menu.investment.url)"><span ng-bind="menu.investment.name"></span></button>
+				<button type="button" class="btn btn-primary" ng-click="click(menu.test.click,menu.test.url)"><span ng-bind="menu.test.name"></span></button>
 			</nav>
 			<div class="tables" ng-controller="MainCtrl">
 				<div ng-include="main"></div>
