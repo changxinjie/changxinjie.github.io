@@ -16,7 +16,6 @@ app.controller("NavCtrl", ["$scope", "Coms", function($scope, Coms) {
 app.controller("MainCtrl", ["$scope", "Coms", function($scope, Coms) {
 	$scope.main = "html/introduce.html";
 	Coms.onSignal('openLink', function(event, data) {
-		console.log(data);
 		$scope.main = data;
 	}, $scope);
 }]);
