@@ -38,7 +38,6 @@
 						<li role="menuitem" ng-click="click(menu.group.btn1.click,menu.group.btn1.url)"><a href="#"><span ng-bind="menu.group.btn1.name"></span></a></li>
 						<li role="menuitem" ng-click="click(menu.group.btn2.click,menu.group.btn2.url)"><a href="#"><span ng-bind="menu.group.btn2.name"></span></a></li>
 						<li role="menuitem" ng-click="click(menu.group.btn3.click,menu.group.btn3.url)"><a href="#"><span ng-bind="menu.group.btn3.name"></span></a></li>
-						<li class="divider"></li>
 						<li role="menuitem"><a href="#"><span ng-bind="menu.group.btn4.name"></span></a></li>
 					</ul>
 				</div>
@@ -47,11 +46,10 @@
 	         <span class="caret"></span>
 	     			</button>
 					<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group2.btn1.name"></span></a></li>
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group2.btn2.name"></span></a></li>
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group2.btn3.name"></span></a></li>
-						<li class="divider"></li>
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group2.btn4.name"></span></a></li>
+						<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn1.name"></span></a></li>
+						<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn2.name"></span></a></li>
+						<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn3.name"></span></a></li>
+						<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn4.name"></span></a></li>
 					</ul>
 				</div>
 				<button type="button" class="btn btn-primary" ng-click="click(menu.investment.click,menu.investment.url)"><span ng-bind="menu.investment.name"></span></button>
