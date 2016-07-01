@@ -1,4 +1,8 @@
-var app = angular.module('chang', ['ngAnimate', 'ngCookies', 'ui.bootstrap', 'angular-coms']);
+if(angular==undefined){
+	alert("load local js files");
+	document.write("<script src='js/angular.min.js'><\/script>");
+}
+var app = angular.module('chang', ['ngAnimate', 'ui.bootstrap', 'angular-coms']);
 app.controller("headerCtrl", ['$scope', function($scope) {
 	$scope.tips = tips;
 }]);
