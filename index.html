@@ -30,6 +30,8 @@
 			<nav ng-controller="NavCtrl">
 				<button type="button" class="btn btn-primary" ng-click="click(menu.introduce.click,menu.introduce.url)"><span ng-bind="menu.introduce.name"></span></button>
 				<button type="button" class="btn btn-primary" ng-click="click(menu.cv.click,menu.cv.url)"><span ng-bind="menu.cv.name"></span></button>
+				<button type="button" class="btn btn-primary" ng-click="click(menu.mime.click,menu.mime.url)"><span ng-bind="menu.mime.name"></span></button>
+				<button type="button" class="btn btn-primary" ng-click="click(menu.investment.click,menu.investment.url)"><span ng-bind="menu.investment.name"></span></button>
 				<div class="btn-group btn-small" uib-dropdown is-open="status1.isopen">
 					<button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled"><span ng-bind="menu.group.name"></span>
 	         <span class="caret"></span>
@@ -52,8 +54,6 @@
 						<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn4.name"></span></a></li>
 					</ul>
 				</div>
-				<button type="button" class="btn btn-primary" ng-click="click(menu.mime.click,menu.mime.url)"><span ng-bind="menu.mime.name"></span></button>
-				<button type="button" class="btn btn-primary" ng-click="click(menu.investment.click,menu.investment.url)"><span ng-bind="menu.investment.name"></span></button>
 				<button type="button" class="btn btn-primary" ng-click="click(menu.test.click,menu.test.url)"><span ng-bind="menu.test.name"></span></button>
 			</nav>
 			<div class="tables" ng-controller="MainCtrl">

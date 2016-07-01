@@ -71,32 +71,65 @@ app.controller("skillCtrl", ["$scope", function($scope) {
 	}];
 	$scope.skills = skills;
 }]);
-app.controller("selfCtrl",['$scope',function($scope){
+app.controller("selfCtrl", ['$scope', function($scope) {
 	$scope.self = self;
 }]);
-app.controller("workHistoryCtrl",['$scope',function($scope){
-	
+app.controller("workHistoryCtrl", ['$scope', function($scope) {
+
 }]);
-app.controller("investCtrl",['$scope',function($scope){
+app.controller("investCtrl", ['$scope', function($scope) {
 	$scope.investement = investement;
 }]);
-app.controller("avCtrl",['$scope',function($scope){
+app.controller("avCtrl", ['$scope', function($scope) {
 	$scope.avItems = avItems;
 }]);
-app.controller("browserCtrl",['$scope',function($scope){
+app.controller("rentCtrl", ['$scope', function($scope) {
+	$scope.rentItems = rentItems;
+}]);
+app.controller("homeCtrl", ['$scope', function($scope) {
+	$scope.homeItems = homeItems;
+}]);
+app.controller("browserCtrl", ['$scope', function($scope) {
 	var canvas = document.getElementById("canvas");
 	var webgl = canvas.getContext("experimental-webgl") || canvas.getContext("webgl");
-	$scope.navigator = [{k:"编码",v:navigator.appCodeName},
-	{k:"名称",v:navigator.appName},
-	{k:"版本",v:navigator.appVersion},
-	{k:"语言",v:navigator.language},
-	{k:"平台",v:navigator.platform},
-	{k:"用户代理",v:navigator.userAgent},
-	{k:"制造商",v:navigator.vendor},
-	{k:"WebGL",v:webgl==undefined||webgl==null?"不支持":"支持"},
-	{k:"Web SQL",v:!window.openDatabase?"不支持":"支持"},
-	{k:"Web Worker",v:typeof(Worker)=="undefined"?"不支持":"支持"},
-	{k:"Web Socket",v:"WebSocket" in window?"支持":"不支持"},
-	{k:"Server Sent Events",v:typeof(EventSource)=="undefined"?"不支持":"支持"},
-	];
+	$scope.navigator = [{
+		k: "屏幕分辨率",
+		v: screen.availWidth + "X" + screen.availHeight
+	}, {
+		k: "编码",
+		v: navigator.appCodeName
+	}, {
+		k: "名称",
+		v: navigator.appName
+	}, {
+		k: "版本",
+		v: navigator.appVersion
+	}, {
+		k: "语言",
+		v: navigator.language
+	}, {
+		k: "平台",
+		v: navigator.platform
+	}, {
+		k: "用户代理",
+		v: navigator.userAgent
+	}, {
+		k: "制造商",
+		v: navigator.vendor
+	}, {
+		k: "WebGL",
+		v: webgl == undefined || webgl == null ? "不支持" : "支持"
+	}, {
+		k: "Web SQL",
+		v: !window.openDatabase ? "不支持" : "支持"
+	}, {
+		k: "Web Worker",
+		v: typeof(Worker) == "undefined" ? "不支持" : "支持"
+	}, {
+		k: "Web Socket",
+		v: "WebSocket" in window ? "支持" : "不支持"
+	}, {
+		k: "Server Sent Events",
+		v: typeof(EventSource) == "undefined" ? "不支持" : "支持"
+	}, ];
 }]);
