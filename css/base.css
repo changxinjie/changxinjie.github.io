@@ -377,3 +377,5 @@ a:hover {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
+.pad1{padding: 1em;}
+.list-type-cycle{list-style-type: circle;}
