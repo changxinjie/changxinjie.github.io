@@ -112,14 +112,14 @@ var skills = [{
 	type: "数据库",
 	content: ["熟练使用MySQL,Oracle,SQL-Server等关系型数据库,常用内置函数,时区处理等",
 		"熟练编写存储过程Producure,触发器Trigger,函数Function,视图View等",
-		"简单了解数据库性能优化,主从配置", "了解Mongodb,Redis等非关系型数据库"
+		"了解数据库性能优化,主从配置", "了解Mongodb,Redis等非关系型数据库"
 	]
 }, {
 	type: "Linux,大数据,虚拟化",
 	content: ["熟练使用基于Ubuntu(Debian)的linux操作系统",
 		"熟悉Linux常用软件源码的编译,安装配置",
 		"熟悉Linux环境下服务器运行环境搭建,网络配置,负载均衡,反向代理等",
-		"简单了解Win和Linux下Docker的配置和使用"
+		"了解Win和Linux下Docker的配置和使用"
 	]
 }, {
 	type: "前端技术",
