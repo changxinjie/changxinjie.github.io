@@ -99,7 +99,7 @@ var investement = [{
 var skills = [{
 	type: "后端/服务端",
 	content: ["熟练使用Java编程语言,Nio,Socket,反射机制和常用设计模式",
-		"熟悉Java开源框架Struts2,Spring4套件,Hibernate,MyBaties,Netty等",
+		"熟悉Java开源框架Struts2,Spring4套件,Hibernate,Mybatis,Netty等",
 		"熟悉Tomcat,Jetty,WebLogic,Ngnix,Apache等Web服务器的安装配置和使用",
 		"熟悉常用企业级组件JMS,Email,报表,工作流等的配置和使用",
 		"熟悉常用web service,Restful api,处理跨域访问,安全控制等",
@@ -116,7 +116,7 @@ var skills = [{
 	]
 }, {
 	type: "Linux,大数据,虚拟化",
-	content: ["熟练使用基于Ubuntu(Debian)的linux操作系统",
+	content: ["熟练使用Cygwin和基于Ubuntu(Debian)的linux操作系统",
 		"熟悉Linux常用软件源码的编译,安装配置",
 		"熟悉Linux环境下服务器运行环境搭建,网络配置,负载均衡,反向代理等",
 		"了解Win和Linux下Docker的配置和使用"
