@@ -99,7 +99,7 @@ var investement = [{
 var skills = [{
 	type: "后端/服务端",
 	content: ["熟练使用Java编程语言,Nio,Socket,反射机制和常用设计模式",
-		"熟悉Java开源框架Struts2,Hibernate,Mybatis,Netty等",
+		"熟悉Java开源框架Struts2,Hibernate,Mybatis,Netty，POI等",
 		"熟悉Spring企业级集成架构Aop,Boot,Mvc,RestDoc,Security,Session,Web Service,Web Socket,Test等",
 		"熟悉Tomcat,Jetty,WebLogic,Ngnix,Apache等Web服务器的安装配置和使用",
 		"熟悉常用企业级组件JMS,Email,报表,工作流等的配置和使用",
@@ -119,7 +119,7 @@ var skills = [{
 	type: "Linux,大数据,虚拟化",
 	content: ["熟练使用Cygwin和基于Ubuntu(Debian)的linux操作系统",
 		"熟悉Linux常用软件源码的编译,安装配置",
-		"熟悉Linux环境下服务器运行环境搭建,网络配置,负载均衡,反向代理等",
+		"熟悉Linux环境下服务器运行环境搭建和常用维护，如网络配置,负载均衡,反向代理等",
 		"了解Win和Linux下Docker的配置和使用"
 	]
 }, {
@@ -127,9 +127,14 @@ var skills = [{
 	content: ["熟练使用javascript编程语言,了解EC6新特性",
 		"熟悉Html5,Css3,Json等标准以及TCP/IP等通讯协议",
 		"熟悉基于Jquery的基本框架,如JqueryUI,easyUI及其常用插件",
-		"熟练使用angular1,了解angular2,react等组件式编程",
+		"熟练使用angular1.x,了解angular2,React等组件式编程",
 		"熟悉NPM,Bower,Grunt等工具", "熟悉PC和移动端网站响应式编程,熟悉Bootstrap",
-		"熟悉各内核浏览器的兼容性处理", "了解Extjs,Flex等富客户端技术", "了解android,ios和C#的winform编程"
+		"熟悉各内核浏览器的兼容性处理", "了解Extjs,Flex等富客户端技术", "了解Android,IOS编程"
+	]
+}, {
+	type: "其他",
+	content: ["熟悉常用UML建模设计","简单使用C/C++,Python，PHP编程，",
+		"简单使用C#，了解ASP动态脚本和IIS服务器配置和使用"
 	]
 }];
 var self = ["具有拥有较好的英文文档阅读和书写能力, 有利于较快的找到问题解决方案.",
