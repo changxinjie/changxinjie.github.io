@@ -99,7 +99,8 @@ var investement = [{
 var skills = [{
 	type: "后端/服务端",
 	content: ["熟练使用Java编程语言,Nio,Socket,反射机制和常用设计模式",
-		"熟悉Java开源框架Struts2,Spring4suite(aop,boot,data,mvc,io,restDoc,security,session,WebService,WebSocket,test,etc),Hibernate,Mybatis,Netty等",
+		"熟悉Java开源框架Struts2,Hibernate,Mybatis,Netty等",
+		"熟悉Spring企业级集成架构aop,boot,data,mvc,io,restDoc,security,session,WebService,WebSocket,test,etc"
 		"熟悉Tomcat,Jetty,WebLogic,Ngnix,Apache等Web服务器的安装配置和使用",
 		"熟悉常用企业级组件JMS,Email,报表,工作流等的配置和使用",
 		"熟悉常用web service,Restful api,处理跨域访问,安全控制等",
