@@ -1,3 +1,5 @@
 #header{margin-top:0 ;}
 .top1{margin-top: 1em;}
 .skill-li{line-height: 0.8em;list-style-type: decimal;}
+.floatLeft{float: left;}
+.floatRight{float: right;font-size: x-small;}
