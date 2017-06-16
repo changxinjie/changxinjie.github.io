@@ -15,29 +15,8 @@
 	<body>
 		<section id="header" class="page-header" ng-controller="headerCtrl">
 			<h1 class="project-name">域名备案中，暂停访问</h1>
-			<h2 class="project-tagline">预计6月30日恢复。</span></h2>
-		</section>
-		<section class="main-content container ">
-			<nav ng-controller="NavCtrl">
-				<button type="button" class="btn btn-primary" ng-click="click(menu.introduce.click,menu.introduce.url)"><span ng-bind="menu.introduce.name"></span></button>
-				<button type="button" class="btn btn-primary" ng-click="click(menu.cv.click,menu.cv.url)"><span ng-bind="menu.cv.name"></span></button>
-				<button type="button" class="btn btn-primary" ng-click="click(menu.mime.click,menu.mime.url)"><span ng-bind="menu.mime.name"></span></button>
-				<button type="button" class="btn btn-primary" ng-click="click(menu.investment.click,menu.investment.url)"><span ng-bind="menu.investment.name"></span></button>
-				<div class="btn-group btn-small" uib-dropdown is-open="status1.isopen">
-					<button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled"><span ng-bind="menu.group.name"></span>
-	         <span class="caret"></span>
-	     			</button>
-					<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-						<li role="menuitem" ng-click="click(menu.group.btn1.click,menu.group.btn1.url)"><a href="#"><span ng-bind="menu.group.btn1.name"></span></a></li>
-						<li role="menuitem" ng-click="click(menu.group.btn2.click,menu.group.btn2.url)"><a href="#"><span ng-bind="menu.group.btn2.name"></span></a></li>
-						<li role="menuitem" ng-click="click(menu.group.btn3.click,menu.group.btn3.url)"><a href="#"><span ng-bind="menu.group.btn3.name"></span></a></li>
-						<li role="menuitem"><a href="#"><span ng-bind="menu.group.btn4.name"></span></a></li>
-					</ul>
-				</div>
-	
-			<footer class="site-footer" ng-controller="footCtrl">
-				<span class="site-footer-credits"><span ng-bind="tips.footer.description"></span><a ng-href="{{links.git.url}}" target="_blank"><span>点此查看</span></a></span>
-			</footer>
+			<h2 class="project-tagline">预计6月30日恢复</h2>
+	     			
 
 		</section>
 
