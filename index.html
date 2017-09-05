@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html ng-app="chang">
-
-	<head>
-		<meta charset="UTF-8">
-		<title>欢迎访问 常新杰 的个人网站</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="favicon.ico" />
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
-		<link rel="stylesheet" type="text/css" href="css/base.css" media="screen">
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
-
-	<body>
-		<section id="header" class="page-header" ng-controller="headerCtrl">
-			<h1 class="project-name">域名备案中，暂停访问</h1>
-			<h2 class="project-tagline">预计6月30日恢复</h2>
-	     			
-
-		</section>
-
-	</body>
-
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎访问 常新杰 的个人网站</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/base.css" media="screen">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/coms.service.min.js" ></script>
+	<script type="text/javascript" src="js/angular-animate.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/ui-bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/handler.js" ></script>
+	<script type="text/javascript" src="js/static.js"></script>
+</head>
+<body>
+<section id="header" class="page-header" ng-controller="headerCtrl">
+	<h1 class="project-name"><span ng-bind="tips.top.topic"></span></h1>
+	<h2 class="project-tagline"><span ng-bind="tips.top.topic2"></span></h2>
+</section>
+<section class="main-content container ">
+	<nav ng-controller="NavCtrl">
+		<button type="button" class="btn btn-primary" ng-click="click(menu.introduce.click,menu.introduce.url)"><span ng-bind="menu.introduce.name"></span></button>
+		<button type="button" class="btn btn-primary" ng-click="click(menu.cv.click,menu.cv.url)"><span ng-bind="menu.cv.name"></span></button>
+		<button type="button" class="btn btn-primary" ng-click="click(menu.mime.click,menu.mime.url)"><span ng-bind="menu.mime.name"></span></button>
+		<button type="button" class="btn btn-primary" ng-click="click(menu.investment.click,menu.investment.url)"><span ng-bind="menu.investment.name"></span></button>
+		<div class="btn-group btn-small" uib-dropdown is-open="status1.isopen">
+			<button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled"><span ng-bind="menu.group.name"></span>
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+				<li role="menuitem" ng-click="click(menu.group.btn1.click,menu.group.btn1.url)"><a href="#"><span ng-bind="menu.group.btn1.name"></span></a></li>
+				<li role="menuitem" ng-click="click(menu.group.btn2.click,menu.group.btn2.url)"><a href="#"><span ng-bind="menu.group.btn2.name"></span></a></li>
+				<li role="menuitem" ng-click="click(menu.group.btn3.click,menu.group.btn3.url)"><a href="#"><span ng-bind="menu.group.btn3.name"></span></a></li>
+				<li role="menuitem"><a href="#"><span ng-bind="menu.group.btn4.name"></span></a></li>
+			</ul>
+		</div>
+		<div class="btn-group" uib-dropdown is-open="status2.isopen">
+			<button id="single-button" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled"><span ng-bind="menu.group2.name"></span>
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+				<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn1.name"></span></a></li>
+				<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn2.name"></span></a></li>
+				<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn3.name"></span></a></li>
+				<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn4.name"></span></a></li>
+			</ul>
+		</div>
+		<button type="button" class="btn btn-primary" ng-click="click(menu.test.click,menu.test.url)"><span ng-bind="menu.test.name"></span></button>
+	</nav>
+	<div class="tables" ng-controller="MainCtrl">
+		<div style="margin-top: 1em;" ng-include="main"></div>
+	</div>
+	<footer class="site-footer" ng-controller="footCtrl">
+		<span class="site-footer-credits"><span ng-bind="tips.footer.description"></span><a ng-href="{{links.git.url}}" target="_blank"><span>点此查看</span></a></span>
+	</footer>
+</section>
+</body>
 </html>
