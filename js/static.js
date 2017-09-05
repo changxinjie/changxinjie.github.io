@@ -98,47 +98,66 @@ var investement = [{
 }];
 var skills = [{
 	type: "后端/服务端",
-	content: ["熟练使用Java编程语言,Nio,Socket,反射机制和常用设计模式",
-		"熟悉Java开源框架Struts2,Hibernate,Mybatis,Netty，POI等",
-		"熟悉Spring企业级集成架构Aop,Boot,Mvc,RestDoc,Security,Session,Web Service,Web Socket,Test等",
+	content: ["熟练使用Java编程语言,NIO,Socket,反射机制及常用设计模式",
+		"熟悉常用Java项目构建工具Maven, Gradle等",
+		"熟练使用Java开源框架,如Struts2, Spring4/Boot,JFinal, Hibernate, MyBatis/Plus,Netty,Mina,Beelsql",
 		"熟悉Tomcat,Jetty,WebLogic,Ngnix,Apache等Web服务器的安装配置和使用",
-		"熟悉常用企业级组件JMS,Email,报表,工作流等的配置和使用",
-		"熟悉常用web service,Restful api,处理跨域访问,安全控制等",
-		"熟悉Java串口编程,通过TTL,WIFI等与硬件产品直接通讯",
-		"熟悉Nodejs,可编写自动化测试脚本,网络爬虫",
-		"熟悉常用项目构建工具Ant,Maven,Gradle",
-		"了解常用企业级安全实现,如Oauth2,Cas,Https,证书及常用加密算法"
+		"熟悉常用企业级组件的配置和使用, 如JavaMail,POI,报表,工作流,JMS(ActiveMQ)",
+		"熟悉企业级Https安全实现, 如Oauth2,CAS单点登录,证书及常用加密算法实现",
+		"熟悉集成常用第三方SDK,如QQ/微信/支付宝/易宝/双乾/银联等三方支付(Java/php环境)",
+		"熟悉测试框架Junit4, Spring-Test以及Swagger2 文档生成",
+		"熟悉常用Web Service, RESTful Api,处理跨域访问,安全控制",
+		"熟悉构建基于Nodejs+Express的web服务, 可独立编写自动化测试,网络爬虫等"
 	]
 }, {
 	type: "数据库",
 	content: ["熟练使用MySQL,Oracle,SQL-Server等关系型数据库,常用内置函数,时区处理等",
 		"熟练编写存储过程Producure,触发器Trigger,函数Function,视图View等",
-		"了解数据库性能优化,主从配置", "了解Mongodb,Redis等非关系型数据库"
+		"熟悉数据库基本维护,性能优化,主从配置,读写分离",
+		"熟悉常用NoSql(mongodb, redis)"
 	]
 }, {
+    type: "物联网",
+    content: ["熟悉Java/Nodejs 串口编程.通过TTL,WIFI与硬件直接通信",
+        "熟悉Java/Nodejs与C/C++动态链接库的互调用",
+        "了解基于OpenWrt环境中插件的编译安装和配置",
+        "了解物联网通讯协议Zwave,ZigBee"
+    ]
+}, {
 	type: "Linux,大数据,虚拟化",
-	content: ["熟练使用Cygwin和基于Ubuntu(Debian)的linux操作系统",
+	content: ["熟练使用Cygwin和基于Ubuntu/CentOS等linux操作系统",
 		"熟悉Linux常用软件源码的编译,安装配置",
-		"熟悉Linux环境下服务器运行环境搭建和常用维护，如网络配置,负载均衡,反向代理等",
-		"了解Win和Linux下Docker的配置和使用"
+		"熟悉Linux环境下服务器java/php运行环境搭建和常用维护，如网络配置,负载均衡,反向代理等",
+		"熟悉Windows和Linux下Docker 集群环境的搭建,网络配置,微服务部署,可独立编写Dockerfile"
 	]
 }, {
 	type: "前端技术",
-	content: ["熟练使用javascript编程语言,了解EC6新特性",
-		"熟悉Html5,Css3,Json等标准以及TCP/IP等通讯协议",
-		"熟悉基于Jquery的基本框架,如JqueryUI,easyUI及其常用插件",
-		"熟练使用angular1.x,了解angular2,React等组件式编程",
-		"熟悉NPM,Bower,Grunt等工具", "熟悉PC和移动端网站响应式编程,熟悉Bootstrap",
-		"熟悉各内核浏览器的兼容性处理", "了解Extjs,Flex等富客户端技术", "了解Android,IOS编程"
+	content: ["熟悉HTML5,CSS3,,Xml,Json等前端标准",
+		"熟练使用Css3,Less进行页面布局和美化",
+		"熟悉JavaScript/Typescript语言, 以及常用js插件",
+		"熟悉基于JQuery的基本框架,如JqueryUI,EasyUI,JqueryMobile及其相关插件",
+		"熟练使用Angular1.x,ionic, Angular2,React等组件式编程",
+		"熟悉微信小程序开发", "熟悉NPM,Bower,Grunt等前端工具", "熟悉PC和移动端网站常用样式框架Bootstrap",
+		"熟悉HTML5新特性,以及各个浏览器的支持,能处理常用浏览器的兼容性问题","熟悉基于nativeJs的跨平台移动客户端开发(H5+,MUI)",
+		"了解ExtJs,Flex等富客户端技术"
 	]
 }, {
+    type: "PHP",
+    content: ["熟悉php编程语言,环境搭配,性能调优,以及常用模块,三方登陆/支付等SDK集成",
+        "熟悉thinkphp5框架"
+    ]
+}, {
 	type: "其他",
-	content: ["熟悉常用UML建模设计","简单使用C/C++,Python，PHP编程，",
-		"简单使用C#，了解ASP动态脚本和IIS服务器配置和使用"
+	content: [" SVN,Git,TFS等版本管理工具",
+		"SQLyog,PL/SQL,phpMyAdmin等数据库管理工具",
+		"PowerDesigner,MS-Viso等UML流程设计工具",
+		"Jenkins持续集成工具",
+		"抓包工具Fiddler"
 	]
 }];
-var self = ["具有拥有较好的英文文档阅读和书写能力, 无障碍阅读各类SDK.",
-	"自学能力较好, 知识面丰富.",
+var self = ["有2年团队管理经验(技术经理岗), 2年运维经验, 2年物联网,云平台开发经验",
+	"具有拥有较好的英文文档阅读和书写能力, 无障碍阅读各类SDK.",
+	"自学能力强, 知识面丰富.",
 	"代码编写规范,逻辑清晰,上手快",
 	"能承受较强的工作压力."
 ];
