@@ -50,10 +50,10 @@
 				<span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-				<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn1.name"></span></a></li>
+				<li role="menuitem" ng-click="click(menu.group2.btn1.click,menu.group2.btn1.url)"><a href="#"><span ng-bind="menu.group2.btn1.name"></span></a></li>
 				<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn2.name"></span></a></li>
-				<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn3.name"></span></a></li>
-				<li role="menuitem" ng-click="click(menu.group2.btn2.click,menu.group2.btn2.url)"><a href="#"><span ng-bind="menu.group2.btn4.name"></span></a></li>
+				<li role="menuitem" ng-click="click(menu.group2.btn3.click,menu.group2.btn3.url)"><a href="#"><span ng-bind="menu.group2.btn3.name"></span></a></li>
+				<li role="menuitem" ng-click="click(menu.group2.btn4.click,menu.group2.btn4.url)"><a href="#"><span ng-bind="menu.group2.btn4.name"></span></a></li>
 			</ul>
 		</div>
 		<button type="button" class="btn btn-primary" ng-click="click(menu.test.click,menu.test.url)"><span ng-bind="menu.test.name"></span></button>
@@ -61,6 +61,7 @@
 	<div class="tables" ng-controller="MainCtrl">
 		<div style="margin-top: 1em;" ng-include="main"></div>
 	</div>
+	<a href="http://wpa.qq.com/msgrd?v=3&uin=3477281956&site=qq&menu=yes" target="_blank">咨询客服</a>
 	<footer class="site-footer" ng-controller="footCtrl">
 		<span class="site-footer-credits"><span ng-bind="tips.footer.description"></span><a ng-href="{{links.git.url}}" target="_blank"><span>点此查看</span></a></span>
 	</footer>
